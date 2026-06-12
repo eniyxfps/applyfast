@@ -1,0 +1,512 @@
+
+<!-- saved from url=(0056)file:///C:/Users/zeniy/Downloads/applyfast_pro_v2_1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+.af{font-family:'Inter',sans-serif;color:var(--color-text-primary);background:var(--color-background-tertiary)}
+
+.af-nav{display:flex;align-items:center;justify-content:space-between;padding:0 2rem;height:56px;background:var(--color-background-primary);border-bottom:0.5px solid var(--color-border-tertiary);position:sticky;top:0;z-index:10}
+.af-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:17px;letter-spacing:-0.5px;display:flex;align-items:center;gap:8px}
+.af-logo-dot{width:8px;height:8px;border-radius:50%;background:#2563EB}
+.af-logo em{color:#2563EB;font-style:normal}
+.af-nav-right{display:flex;align-items:center;gap:10px}
+.af-nav-link{font-size:13px;color:var(--color-text-secondary);background:none;border:none;cursor:pointer;padding:0 8px}
+.af-nav-btn{background:#2563EB;color:#fff;border:none;padding:7px 18px;border-radius:6px;font-size:13px;font-weight:500;cursor:pointer;letter-spacing:-0.2px}
+.af-nav-btn:hover{background:#1D4ED8}
+
+.af-hero{padding:5rem 2rem 4rem;text-align:center;background:var(--color-background-primary);border-bottom:0.5px solid var(--color-border-tertiary)}
+.af-eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#2563EB;margin-bottom:1.5rem}
+.af-eyebrow-line{width:24px;height:1px;background:#2563EB}
+.af-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:48px;line-height:1.05;letter-spacing:-2px;max-width:680px;margin:0 auto 1.25rem;color:var(--color-text-primary)}
+.af-h1 .af-accent{color:#2563EB;position:relative}
+.af-cursor{display:inline-block;width:3px;height:0.85em;background:#2563EB;vertical-align:middle;margin-left:2px;animation:blink 1s step-end infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.af-hero-sub{font-size:16px;color:var(--color-text-secondary);max-width:500px;margin:0 auto 2.5rem;line-height:1.7}
+.af-hero-cta{display:inline-flex;align-items:center;gap:8px;background:#2563EB;color:#fff;border:none;padding:14px 28px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;letter-spacing:-0.3px;transition:background 0.15s}
+.af-hero-cta:hover{background:#1D4ED8}
+.af-hero-cta i{font-size:16px}
+.af-hero-proof{margin-top:2.5rem;display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap}
+.af-proof-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--color-text-secondary)}
+.af-proof-item i{font-size:14px;color:#10B981}
+.af-proof-divider{width:1px;height:14px;background:var(--color-border-tertiary)}
+
+.af-how{display:flex;justify-content:center;gap:0;background:var(--color-background-secondary);border-bottom:0.5px solid var(--color-border-tertiary)}
+.af-step{display:flex;align-items:center;gap:10px;padding:1rem 1.5rem;font-size:13px;color:var(--color-text-secondary);flex:1;justify-content:center;max-width:200px}
+.af-step-n{font-family:'Syne',sans-serif;font-weight:800;font-size:20px;color:var(--color-border-secondary);line-height:1}
+.af-step-text{font-size:12px;line-height:1.4}
+.af-step-sep{color:var(--color-border-tertiary);font-size:18px;flex-shrink:0}
+
+.af-main{max-width:780px;margin:0 auto;padding:2.5rem 1.25rem}
+
+.af-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;overflow:hidden}
+.af-card-head{padding:1.25rem 1.5rem;border-bottom:0.5px solid var(--color-border-tertiary);display:flex;align-items:center;justify-content:space-between}
+.af-card-title{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;letter-spacing:-0.3px}
+.af-card-badge{font-size:11px;font-weight:500;padding:3px 10px;border-radius:100px;background:var(--color-background-info);color:var(--color-text-info)}
+.af-card-body{padding:1.5rem}
+.af-two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+
+.af-field-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.6px;color:var(--color-text-secondary);margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.af-field-label span{font-weight:400;letter-spacing:0;text-transform:none;font-size:11px;color:var(--color-text-secondary)}
+.af-textarea{width:100%;min-height:190px;padding:12px;font-family:'Inter',sans-serif;font-size:13px;border:0.5px solid var(--color-border-secondary);border-radius:8px;background:var(--color-background-secondary);color:var(--color-text-primary);resize:none;line-height:1.6;transition:border-color 0.15s}
+.af-textarea:focus{outline:none;border-color:#2563EB;background:var(--color-background-primary)}
+.af-textarea::placeholder{color:var(--color-text-secondary);opacity:0.6}
+
+.af-drop{min-height:190px;border:1px dashed var(--color-border-secondary);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;cursor:pointer;transition:all 0.15s;background:var(--color-background-secondary);text-align:center;padding:1.5rem}
+.af-drop:hover,.af-drop:focus-within{border-color:#2563EB;background:#EFF6FF}
+.af-drop.ok{border-color:#10B981;border-style:solid;background:#F0FDF9}
+.af-drop-icon{font-size:26px;color:var(--color-text-secondary)}
+.af-drop.ok .af-drop-icon{color:#10B981}
+.af-drop-head{font-size:14px;font-weight:500;color:var(--color-text-primary)}
+.af-drop-sub{font-size:12px;color:var(--color-text-secondary)}
+.af-drop-chip{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:#10B981;background:#DCFCE7;padding:3px 10px;border-radius:100px;margin-top:4px}
+
+.af-card-foot{padding:1rem 1.5rem;border-top:0.5px solid var(--color-border-tertiary);display:flex;align-items:center;justify-content:space-between;background:var(--color-background-secondary)}
+.af-foot-note{font-size:12px;color:var(--color-text-secondary);display:flex;align-items:center;gap:5px}
+.af-foot-note i{font-size:13px}
+.af-submit{background:#2563EB;color:#fff;border:none;padding:10px 24px;border-radius:7px;font-family:'Syne',sans-serif;font-weight:700;font-size:14px;cursor:pointer;display:flex;align-items:center;gap:7px;letter-spacing:-0.2px;transition:background 0.15s}
+.af-submit:hover{background:#1D4ED8}
+.af-submit:disabled{opacity:0.45;cursor:not-allowed}
+.af-submit i{font-size:15px}
+
+.af-error{display:none;margin:0.75rem 1.5rem;background:#FEF2F2;border:0.5px solid #FCA5A5;border-radius:7px;padding:10px 14px;font-size:13px;color:#991B1B;display:none;align-items:center;gap:8px}
+.af-error i{font-size:15px;flex-shrink:0}
+
+.af-loading{display:none;padding:3.5rem 2rem;text-align:center}
+.af-loading-icon{width:48px;height:48px;border:3px solid var(--color-border-tertiary);border-top-color:#2563EB;border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 1.5rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+.af-loading-title{font-family:'Syne',sans-serif;font-weight:700;font-size:18px;margin-bottom:6px}
+.af-loading-sub{font-size:13px;color:var(--color-text-secondary);margin-bottom:2rem}
+.af-progress{max-width:340px;margin:0 auto 1.5rem}
+.af-progress-track{height:3px;background:var(--color-border-tertiary);border-radius:100px;overflow:hidden;margin-bottom:8px}
+.af-progress-bar{height:100%;background:#2563EB;border-radius:100px;width:0%;transition:width 0.5s ease}
+.af-progress-label{font-size:12px;color:var(--color-text-secondary);text-align:center}
+.af-lsteps{display:flex;flex-direction:column;gap:6px;max-width:280px;margin:0 auto}
+.af-lstep{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--color-text-secondary);padding:5px 8px;border-radius:6px;transition:all 0.2s}
+.af-lstep.active{color:var(--color-text-primary);background:var(--color-background-secondary)}
+.af-lstep.done{color:#10B981}
+.af-lstep-dot{width:6px;height:6px;border-radius:50%;background:var(--color-border-secondary);flex-shrink:0}
+.af-lstep.active .af-lstep-dot{background:#2563EB}
+.af-lstep.done .af-lstep-dot{background:#10B981}
+
+.af-results{display:none;padding-bottom:3rem}
+.af-results-nav{background:var(--color-background-primary);border-bottom:0.5px solid var(--color-border-tertiary);padding:0;display:flex;align-items:stretch}
+.af-results-logo{padding:0 1.5rem;display:flex;align-items:center;font-family:'Syne',sans-serif;font-weight:800;font-size:14px;letter-spacing:-0.3px;border-right:0.5px solid var(--color-border-tertiary)}
+.af-results-logo em{color:#2563EB;font-style:normal}
+.af-rtabs{display:flex;flex:1}
+.af-rtab{padding:0 18px;height:46px;font-size:13px;font-weight:500;cursor:pointer;border:none;background:none;color:var(--color-text-secondary);border-bottom:2px solid transparent;display:flex;align-items:center;gap:7px;transition:all 0.15s}
+.af-rtab i{font-size:14px}
+.af-rtab.active{color:#2563EB;border-bottom-color:#2563EB}
+.af-rtab-new{margin-left:auto;padding:0 1.5rem;font-size:12px;color:var(--color-text-secondary);cursor:pointer;background:none;border:none;display:flex;align-items:center;gap:5px;border-left:0.5px solid var(--color-border-tertiary)}
+.af-rtab-new:hover{color:var(--color-text-primary)}
+
+.af-results-body{max-width:860px;margin:0 auto;padding:1.5rem 1.25rem}
+
+.af-score-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;margin-bottom:1.25rem;overflow:hidden}
+.af-score-top{display:flex;align-items:stretch}
+.af-score-ring-col{padding:1.5rem 2rem;display:flex;flex-direction:column;align-items:center;justify-content:center;border-right:0.5px solid var(--color-border-tertiary);min-width:140px}
+.af-ring-svg{transform:rotate(-90deg)}
+.af-ring-inner{display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:8px}
+.af-ring-pct{font-family:'Syne',sans-serif;font-weight:800;font-size:28px;line-height:1}
+.af-ring-label{font-size:10px;text-transform:uppercase;letter-spacing:0.7px;color:var(--color-text-secondary)}
+.af-score-details{flex:1;padding:1.5rem}
+.af-score-grade{font-family:'Syne',sans-serif;font-weight:800;font-size:22px;letter-spacing:-0.5px;margin-bottom:4px}
+.af-score-verdict{font-size:13px;color:var(--color-text-secondary);margin-bottom:1.25rem;line-height:1.5}
+.af-bars{display:flex;flex-direction:column;gap:8px}
+.af-bar-row{display:grid;grid-template-columns:90px 1fr 32px;align-items:center;gap:10px;font-size:12px}
+.af-bar-lbl{color:var(--color-text-secondary)}
+.af-bar-track{height:4px;background:var(--color-background-secondary);border-radius:100px;overflow:hidden;border:0.5px solid var(--color-border-tertiary)}
+.af-bar-fill{height:100%;border-radius:100px;transition:width 1.2s cubic-bezier(0.4,0,0.2,1)}
+.af-bar-num{font-family:'Inter',monospace;font-size:11px;color:var(--color-text-secondary);text-align:right}
+
+.af-keywords{border-top:0.5px solid var(--color-border-tertiary);padding:1rem 1.5rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.af-kw-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;color:var(--color-text-secondary);margin-right:4px}
+.af-kw{display:inline-flex;align-items:center;gap:4px;font-size:11px;padding:3px 10px;border-radius:100px;border:0.5px solid var(--color-border-tertiary);color:var(--color-text-secondary)}
+.af-kw.match{background:#F0FDF9;border-color:#10B981;color:#065F46}
+
+.af-panel{display:none}
+.af-panel.active{display:block}
+.af-content-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:12px;overflow:hidden}
+.af-content-head{padding:1rem 1.5rem;border-bottom:0.5px solid var(--color-border-tertiary);display:flex;align-items:center;justify-content:space-between}
+.af-content-title{font-family:'Syne',sans-serif;font-weight:700;font-size:14px}
+.af-content-actions{display:flex;gap:8px}
+.af-action-btn{display:flex;align-items:center;gap:5px;font-size:12px;padding:5px 12px;border-radius:6px;border:0.5px solid var(--color-border-secondary);background:var(--color-background-primary);color:var(--color-text-secondary);cursor:pointer;transition:all 0.15s}
+.af-action-btn:hover{color:var(--color-text-primary);border-color:var(--color-border-primary)}
+.af-action-btn i{font-size:13px}
+.af-content-body{padding:1.5rem}
+.af-prose{font-size:13px;line-height:1.75;color:var(--color-text-primary);white-space:pre-wrap;font-family:'Inter',sans-serif}
+
+.af-qgrid{display:flex;flex-direction:column;gap:8px;padding:1.5rem}
+.af-q{border:0.5px solid var(--color-border-tertiary);border-radius:8px;overflow:hidden}
+.af-q-head{display:flex;align-items:center;gap:8px;padding:10px 14px;background:var(--color-background-secondary)}
+.af-q-cat{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;padding:2px 8px;border-radius:100px}
+.af-q-cat.beh{background:#EDE9FE;color:#4C1D95}
+.af-q-cat.tec{background:#E0F2FE;color:#075985}
+.af-q-cat.rol{background:#FEF3C7;color:#78350F}
+.af-q-cat.cul{background:#F0FDF9;color:#065F46}
+.af-q-num{font-size:11px;color:var(--color-text-secondary);margin-left:auto}
+.af-q-text{font-size:13px;line-height:1.55;color:var(--color-text-primary);padding:12px 14px}
+</style>
+
+</head><body><div class="af" id="app">
+<h2 class="sr-only">ApplyFast — AI-powered job application assistant</h2>
+
+<nav class="af-nav">
+  <div class="af-logo"><div class="af-logo-dot"></div>Apply<em>Fast</em></div>
+  <div class="af-nav-right">
+    <button class="af-nav-link">How it works</button>
+    <button class="af-nav-btn" onclick="document.getElementById(&#39;main-form&#39;).scrollIntoView({behavior:&#39;smooth&#39;})">Get started</button>
+  </div>
+</nav>
+
+<div id="home-view">
+  <section class="af-hero">
+    <div class="af-eyebrow"><span class="af-eyebrow-line"></span>AI-powered applications<span class="af-eyebrow-line"></span></div>
+    <h1 class="af-h1">Get the interview for<br><span class="af-accent" id="tw"></span><span class="af-cursor"></span></h1>
+    <p class="af-hero-sub">Paste a job description, upload your resume — we rewrite everything to match, score your fit, and prep you for the interview.</p>
+    <button class="af-hero-cta" onclick="document.getElementById(&#39;main-form&#39;).scrollIntoView({behavior:&#39;smooth&#39;})">
+      Analyze my application <i class="ti ti-arrow-right" aria-hidden="true"></i>
+    </button>
+    <div class="af-hero-proof">
+      <div class="af-proof-item"><i class="ti ti-check" aria-hidden="true"></i>Resume rewrite</div>
+      <div class="af-proof-divider"></div>
+      <div class="af-proof-item"><i class="ti ti-check" aria-hidden="true"></i>Fit score</div>
+      <div class="af-proof-divider"></div>
+      <div class="af-proof-item"><i class="ti ti-check" aria-hidden="true"></i>Cover letter</div>
+      <div class="af-proof-divider"></div>
+      <div class="af-proof-item"><i class="ti ti-check" aria-hidden="true"></i>Interview prep</div>
+    </div>
+  </section>
+
+  <div class="af-how">
+    <div class="af-step">
+      <div class="af-step-n">01</div>
+      <div class="af-step-text">Paste the<br>job description</div>
+    </div>
+    <div class="af-step-sep">›</div>
+    <div class="af-step">
+      <div class="af-step-n">02</div>
+      <div class="af-step-text">Upload your<br>resume</div>
+    </div>
+    <div class="af-step-sep">›</div>
+    <div class="af-step">
+      <div class="af-step-n">03</div>
+      <div class="af-step-text">AI rewrites<br>everything</div>
+    </div>
+    <div class="af-step-sep">›</div>
+    <div class="af-step">
+      <div class="af-step-n">04</div>
+      <div class="af-step-text">Apply with<br>confidence</div>
+    </div>
+  </div>
+
+  <div class="af-main" id="main-form">
+    <div class="af-card">
+      <div class="af-card-head">
+        <div class="af-card-title">Analyze your application</div>
+        <div class="af-card-badge">Powered by Claude AI</div>
+      </div>
+      <div class="af-card-body">
+        <div class="af-two-col">
+          <div>
+            <div class="af-field-label">Job description <span>Paste the full listing</span></div>
+            <textarea class="af-textarea" id="jd" placeholder="Include the role summary, responsibilities, and requirements — the more detail, the better your results…"></textarea>
+          </div>
+          <div>
+            <div class="af-field-label">Your resume <span>PDF, DOC, or TXT</span></div>
+            <div class="af-drop" id="drop" onclick="document.getElementById(&#39;fInput&#39;).click()" tabindex="0" role="button" aria-label="Upload resume">
+              <i class="ti ti-file-text af-drop-icon" aria-hidden="true"></i>
+              <div class="af-drop-head">Click to upload</div>
+              <div class="af-drop-sub">or drag and drop your file here</div>
+              <div class="af-drop-chip" id="drop-chip" style="display:none"><i class="ti ti-check" style="font-size:12px" aria-hidden="true"></i><span id="chip-name"></span></div>
+            </div>
+            <input type="file" id="fInput" accept=".pdf,.txt,.doc,.docx" style="display:none" onchange="onFile(this)">
+          </div>
+        </div>
+      </div>
+      <div id="err-row" style="display:none;padding:0 1.5rem 0.75rem">
+        <div style="display:flex;align-items:center;gap:8px;background:#FEF2F2;border:0.5px solid #FCA5A5;border-radius:7px;padding:10px 14px;font-size:13px;color:#991B1B">
+          <i class="ti ti-alert-circle" style="font-size:15px;flex-shrink:0" aria-hidden="true"></i>
+          <span id="err-msg"></span>
+        </div>
+      </div>
+      <div class="af-card-foot">
+        <div class="af-foot-note"><i class="ti ti-lock" aria-hidden="true"></i>Your data is never stored</div>
+        <button class="af-submit" id="go-btn" onclick="go()">
+          Analyze now <i class="ti ti-sparkles" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="af-loading" id="loading-view">
+  <div class="af-loading-icon"></div>
+  <div class="af-loading-title">Analyzing your application…</div>
+  <div class="af-loading-sub">This takes about 30 seconds</div>
+  <div class="af-progress">
+    <div class="af-progress-track"><div class="af-progress-bar" id="prog"></div></div>
+    <div class="af-progress-label" id="prog-label">Starting…</div>
+  </div>
+  <div class="af-lsteps" id="lsteps">
+    <div class="af-lstep" id="l0"><div class="af-lstep-dot"></div>Reading job description</div>
+    <div class="af-lstep" id="l1"><div class="af-lstep-dot"></div>Parsing resume content</div>
+    <div class="af-lstep" id="l2"><div class="af-lstep-dot"></div>Rewriting resume to match</div>
+    <div class="af-lstep" id="l3"><div class="af-lstep-dot"></div>Scoring your fit</div>
+    <div class="af-lstep" id="l4"><div class="af-lstep-dot"></div>Writing cover letter</div>
+    <div class="af-lstep" id="l5"><div class="af-lstep-dot"></div>Generating interview questions</div>
+  </div>
+</div>
+
+<div class="af-results" id="results-view">
+  <div class="af-results-nav">
+    <div class="af-results-logo">Apply<em>Fast</em></div>
+    <div class="af-rtabs">
+      <button class="af-rtab active" onclick="rtab(&#39;resume&#39;,this)"><i class="ti ti-file-description" aria-hidden="true"></i>Resume</button>
+      <button class="af-rtab" onclick="rtab(&#39;cover&#39;,this)"><i class="ti ti-mail" aria-hidden="true"></i>Cover letter</button>
+      <button class="af-rtab" onclick="rtab(&#39;interview&#39;,this)"><i class="ti ti-messages" aria-hidden="true"></i>Interview prep</button>
+    </div>
+    <button class="af-rtab-new" onclick="reset()"><i class="ti ti-refresh" style="font-size:13px" aria-hidden="true"></i>New application</button>
+  </div>
+
+  <div class="af-results-body">
+    <div class="af-score-card">
+      <div class="af-score-top">
+        <div class="af-score-ring-col">
+          <svg class="af-ring-svg" width="88" height="88" viewBox="0 0 88 88">
+            <circle cx="44" cy="44" r="36" fill="none" stroke="var(--color-border-tertiary)" stroke-width="7"></circle>
+            <circle cx="44" cy="44" r="36" fill="none" stroke="#2563EB" stroke-width="7" stroke-linecap="round" stroke-dasharray="226.2" stroke-dashoffset="226.2" id="score-ring"></circle>
+          </svg>
+          <div class="af-ring-inner">
+            <div class="af-ring-pct" id="ring-pct">—</div>
+            <div class="af-ring-label">Fit score</div>
+          </div>
+        </div>
+        <div class="af-score-details">
+          <div class="af-score-grade" id="s-grade">—</div>
+          <div class="af-score-verdict" id="s-verdict">Calculating your fit…</div>
+          <div class="af-bars" id="bars"></div>
+        </div>
+      </div>
+      <div class="af-keywords" id="keywords"></div>
+    </div>
+
+    <div class="af-panel active" id="panel-resume">
+      <div class="af-content-card">
+        <div class="af-content-head">
+          <div class="af-content-title">Tailored resume</div>
+          <div class="af-content-actions">
+            <button class="af-action-btn" onclick="copy(&#39;resume-body&#39;)"><i class="ti ti-copy" aria-hidden="true"></i>Copy</button>
+          </div>
+        </div>
+        <div class="af-content-body"><div class="af-prose" id="resume-body"></div></div>
+      </div>
+    </div>
+
+    <div class="af-panel" id="panel-cover">
+      <div class="af-content-card">
+        <div class="af-content-head">
+          <div class="af-content-title">Cover letter</div>
+          <div class="af-content-actions">
+            <button class="af-action-btn" onclick="copy(&#39;cover-body&#39;)"><i class="ti ti-copy" aria-hidden="true"></i>Copy</button>
+          </div>
+        </div>
+        <div class="af-content-body"><div class="af-prose" id="cover-body"></div></div>
+      </div>
+    </div>
+
+    <div class="af-panel" id="panel-interview">
+      <div class="af-content-card">
+        <div class="af-content-head">
+          <div class="af-content-title">Interview preparation — 8 questions to practice</div>
+        </div>
+        <div class="af-qgrid" id="q-grid"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+let resumeText = '';
+
+const roles = ['that PM role','that engineering job','that design position','that data role','that leadership role','that marketing job'];
+let ri=0,ci=0,del=false;
+const tw=document.getElementById('tw');
+function type(){
+  const t=roles[ri];
+  if(!del){ci++;tw.textContent=t.slice(0,ci);if(ci===t.length){del=true;setTimeout(type,1900);return;}}
+  else{ci--;tw.textContent=t.slice(0,ci);if(ci===0){del=false;ri=(ri+1)%roles.length;}}
+  setTimeout(type,del?38:70);
+}
+setTimeout(type,600);
+
+function onFile(inp){
+  const f=inp.files[0]; if(!f)return;
+  const drop=document.getElementById('drop');
+  drop.classList.add('ok');
+  drop.querySelector('.af-drop-icon').className='ti ti-circle-check af-drop-icon';
+  const chip=document.getElementById('drop-chip');
+  document.getElementById('chip-name').textContent=f.name;
+  chip.style.display='inline-flex';
+  const r=new FileReader();
+  r.onload=e=>{resumeText=e.target.result;};
+  r.readAsText(f);
+}
+
+function showErr(m){
+  const row=document.getElementById('err-row');
+  document.getElementById('err-msg').textContent=m;
+  row.style.display='block';
+}
+function hideErr(){document.getElementById('err-row').style.display='none';}
+
+function show(id){['home-view','loading-view','results-view'].forEach(v=>{document.getElementById(v).style.display=v===id?'block':'none';});}
+
+const loadSteps=[
+  {pct:10,label:'Reading the job description…'},
+  {pct:22,label:'Parsing your resume…'},
+  {pct:40,label:'Rewriting resume…'},
+  {pct:58,label:'Scoring your fit…'},
+  {pct:76,label:'Writing cover letter…'},
+  {pct:92,label:'Generating interview questions…'}
+];
+
+async function go(){
+  hideErr();
+  const jd=document.getElementById('jd').value.trim();
+  if(!jd){showErr('Please paste a job description to continue.');return;}
+  if(!resumeText){showErr('Please upload your resume to continue.');return;}
+  show('loading-view');
+
+  const delays=[0,700,1500,3000,5000,7500];
+  loadSteps.forEach((s,i)=>{
+    setTimeout(()=>{
+      if(i>0)document.getElementById('l'+(i-1)).className='af-lstep done';
+      document.getElementById('l'+i).className='af-lstep active';
+      document.getElementById('prog').style.width=s.pct+'%';
+      document.getElementById('prog-label').textContent=s.label;
+    },delays[i]);
+  });
+
+  try{
+    const res=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','x-api-key':'PASTE_YOUR_KEY_HERE','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({
+        model:'claude-sonnet-4-6',
+        max_tokens:3000,
+        messages:[{role:'user',content:`You are an expert career coach. Given a job description and resume, respond ONLY with a valid JSON object — no markdown fences, no preamble.
+
+JOB DESCRIPTION:
+${jd}
+
+RESUME:
+${resumeText}
+
+JSON schema:
+{
+  "fit_score": integer 0-100,
+  "grade": "Excellent Match"|"Strong Match"|"Good Match"|"Partial Match"|"Weak Match",
+  "verdict": "one concise sentence about overall fit, max 18 words",
+  "skills_score": integer 0-100,
+  "experience_score": integer 0-100,
+  "keywords_score": integer 0-100,
+  "matched_keywords": ["up to 5 keywords from JD that appear in resume"],
+  "missing_keywords": ["up to 4 important keywords from JD missing from resume"],
+  "resume": "full rewritten resume as plain text, optimized for this role",
+  "cover_letter": "professional cover letter as plain text, 3-4 paragraphs",
+  "interview_questions": [
+    {"category":"Behavioral"|"Technical"|"Role-specific"|"Culture fit","question":"string"},
+    ... 8 total
+  ]
+}`}]}
+      })
+    });
+    const data=await res.json();
+    const raw=data.content.map(b=>b.text||'').join('');
+    const d=JSON.parse(raw.replace(/```json|```/g,'').trim());
+    document.getElementById('prog').style.width='100%';
+    setTimeout(()=>{show('results-view');render(d);},300);
+  }catch(e){
+    show('home-view');
+    showErr('Something went wrong. Please try again.');
+    console.error(e);
+  }
+}
+
+function render(d){
+  const score=Math.min(100,Math.max(0,d.fit_score||0));
+  const circ=226.2;
+  let p=0;
+  const ring=document.getElementById('score-ring');
+  const pctEl=document.getElementById('ring-pct');
+  const iv=setInterval(()=>{
+    p=Math.min(p+2,score);
+    pctEl.textContent=p+'%';
+    ring.setAttribute('stroke-dashoffset',circ-(p/100)*circ);
+    ring.setAttribute('stroke',p>=70?'#10B981':p>=50?'#2563EB':'#F59E0B');
+    if(p>=score)clearInterval(iv);
+  },18);
+
+  document.getElementById('s-grade').textContent=d.grade||'—';
+  document.getElementById('s-verdict').textContent=d.verdict||'';
+
+  const barDefs=[
+    {l:'Skills match',v:d.skills_score||0,c:'#2563EB'},
+    {l:'Experience',v:d.experience_score||0,c:'#2563EB'},
+    {l:'Keywords',v:d.keywords_score||0,c:'#2563EB'}
+  ];
+  document.getElementById('bars').innerHTML=barDefs.map(b=>`
+    <div class="af-bar-row">
+      <span class="af-bar-lbl">${b.l}</span>
+      <div class="af-bar-track"><div class="af-bar-fill" style="width:0%;background:${b.c}" data-w="${b.v}"></div></div>
+      <span class="af-bar-num">${b.v}%</span>
+    </div>`).join('');
+  setTimeout(()=>{document.querySelectorAll('.af-bar-fill').forEach(el=>{el.style.width=el.dataset.w+'%';});},200);
+
+  const kw=document.getElementById('keywords');
+  const matched=(d.matched_keywords||[]).map(k=>`<span class="af-kw match"><i class="ti ti-check" style="font-size:11px" aria-hidden="true"></i>${k}</span>`).join('');
+  const missing=(d.missing_keywords||[]).map(k=>`<span class="af-kw">${k}</span>`).join('');
+  kw.innerHTML=`<span class="af-kw-label">Keywords</span>${matched}${missing?'<span style="color:var(--color-border-secondary);font-size:11px">missing:</span>'+missing:''}`;
+
+  document.getElementById('resume-body').textContent=d.resume||'';
+  document.getElementById('cover-body').textContent=d.cover_letter||'';
+
+  const catClass={Behavioral:'beh',Technical:'tec','Role-specific':'rol','Culture fit':'cul'};
+  document.getElementById('q-grid').innerHTML=(d.interview_questions||[]).map((q,i)=>`
+    <div class="af-q">
+      <div class="af-q-head">
+        <span class="af-q-cat ${catClass[q.category]||'beh'}">${q.category}</span>
+        <span class="af-q-num">Q${i+1}</span>
+      </div>
+      <div class="af-q-text">${q.question}</div>
+    </div>`).join('');
+}
+
+function rtab(id,btn){
+  document.querySelectorAll('.af-rtab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.af-panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('panel-'+id).classList.add('active');
+}
+
+function copy(id){navigator.clipboard.writeText(document.getElementById(id).textContent).catch(()=>{});}
+
+function reset(){
+  document.getElementById('jd').value='';
+  document.getElementById('fInput').value='';
+  resumeText='';
+  const drop=document.getElementById('drop');
+  drop.classList.remove('ok');
+  drop.querySelector('.af-drop-icon').className='ti ti-file-text af-drop-icon';
+  document.getElementById('drop-chip').style.display='none';
+  document.getElementById('prog').style.width='0%';
+  for(let i=0;i<6;i++)document.getElementById('l'+i).className='af-lstep';
+  show('home-view');
+}
+
+show('home-view');
+</script>
+</body></html>
