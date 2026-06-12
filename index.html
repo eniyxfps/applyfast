@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ApplyFast — AI-powered job application assistant</title>
 <link rel="preconnect" href="https://fonts.googleapis.com/">
-<link href="file:///C:/Users/zeniy/Downloads/upgraded_files/css2" rel="stylesheet">
-<link rel="stylesheet" href="file:///C:/Users/zeniy/Downloads/upgraded_files/tabler-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -270,21 +270,38 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
   .score-ring-col{border-right:none;border-bottom:1px solid var(--border)}
   .how{flex-wrap:wrap}
 }
+#intro {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+}
 </style>
 </head>
 <body>
-
-
+<div id="intro">
+  <div class="intro-content">
+    <div class="intro-mark">
+      <svg viewBox="0 0 100 100">
+        <path d="M50 10 L90 50 L50 90 L10 50 Z"></path>
+      </svg>
+    </div>
+    <div class="intro-logo">APPLYFAST</div>
+  </div>
+</div>
 <script>
-(function(){
-  setTimeout(function(){
-    var intro=document.getElementById('intro');
-    if(intro){
-      intro.classList.add('hide');
-      setTimeout(function(){intro.remove();},800);
-    }
-  },2200);
-})();
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    const intro = document.getElementById("intro");
+    if (!intro) return;
+
+    intro.classList.add("hide");
+
+    setTimeout(() => {
+      intro.remove();
+    }, 800);
+
+  }, 2000);
+});
 </script>
 
 <canvas id="particles"></canvas>
@@ -668,7 +685,9 @@ JSON schema:
     document.getElementById('prog').style.width='100%';
     setTimeout(()=>{show('results-view');render(d);},300);
   }catch(e){
-    show('home-view');
+    window.addEventListener("load", () => {
+  show('home-view');
+});
     showErr('Something went wrong: '+e.message);
     console.error(e);
   }
