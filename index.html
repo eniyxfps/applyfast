@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- saved from url=(0045)file:///C:/Users/zeniy/Downloads/index_3.html -->
+<html lang="en" style="--mx: 1010px; --my: 879px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ApplyFast — AI-powered job application assistant</title>
 <link rel="preconnect" href="https://fonts.googleapis.com/">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link href="./index clean _files/css2" rel="stylesheet">
+<link rel="stylesheet" href="./index clean _files/tabler-icons.min.css">
 <style>
   body {
   font-family: 'Inter', sans-serif;
@@ -281,23 +282,7 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 </style>
 </head>
 <body>
-<textarea id="resume" placeholder="Paste resume"></textarea>
 
-<textarea id="job" placeholder="Paste job description"></textarea>
-
-<button onclick="analyzeResume()">Analyze</button>
-
-<div id="output"></div>
-<div id="intro">
-  <div class="intro-content">
-    <div class="intro-mark">
-      <svg viewBox="0 0 100 100">
-        <path d="M50 10 L90 50 L50 90 L10 50 Z"></path>
-      </svg>
-    </div>
-    <div class="intro-logo">APPLYFAST</div>
-  </div>
-</div>
 <script>
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
@@ -314,28 +299,28 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-<canvas id="particles"></canvas>
+<canvas id="particles" width="1432" height="948"></canvas>
 <div id="spotlight"></div>
-<div class="orb orb1"></div>
-<div class="orb orb2"></div>
+<div class="orb orb1" style="transform: translate(4.10615px, 8.5443px);"></div>
+<div class="orb orb2" style="transform: translate(-2.8743px, -5.98101px);"></div>
 <div class="orb orb3"></div>
 
 <nav>
   <div class="logo"><div class="logo-dot"></div>Apply<em>Fast</em></div>
   <div class="nav-right">
-    <button class="nav-link" onclick="document.querySelector('.how').scrollIntoView({behavior:'smooth'})">How it works</button>
-    <button class="nav-btn" onclick="document.getElementById('main-form').scrollIntoView({behavior:'smooth'})">Get started</button>
+    <button class="nav-link" onclick="document.querySelector(&#39;.how&#39;).scrollIntoView({behavior:&#39;smooth&#39;})" style="position: relative; overflow: hidden;">How it works</button>
+    <button class="nav-btn" onclick="document.getElementById(&#39;main-form&#39;).scrollIntoView({behavior:&#39;smooth&#39;})" style="position: relative; overflow: hidden;">Get started</button>
   </div>
 </nav>
 
-<div id="home-view">
+<div id="home-view" style="display: block;">
   <section class="hero">
     <div class="hero-grid"></div>
     <div class="eyebrow"><span class="eyebrow-line"></span>AI-powered applications<span class="eyebrow-line"></span></div>
-    <h1>Get the interview for<br><span class="acc" id="tw"></span></h1>
+    <h1>Get the interview for<br><span class="acc" id="tw">that marketi</span></h1>
     <p class="hero-sub">Paste a job description, upload your resume — we rewrite everything to match, score your fit, and prep you for the interview.</p>
     <div class="hero-cta-wrap">
-      <button class="hero-cta" onclick="document.getElementById('main-form').scrollIntoView({behavior:'smooth'})">
+      <button class="hero-cta" onclick="document.getElementById(&#39;main-form&#39;).scrollIntoView({behavior:&#39;smooth&#39;})" style="position: relative; overflow: hidden;">
         Analyze my application <i class="ti ti-arrow-right" aria-hidden="true"></i>
       </button>
     </div>
@@ -353,22 +338,22 @@ window.addEventListener("DOMContentLoaded", () => {
   <div class="stats" id="stats">
     <div class="stat">
       <i class="ti ti-rocket stat-icon" aria-hidden="true"></i>
-      <div class="stat-num"><span class="counter" data-target="12000" data-suffix="+">0</span></div>
+      <div class="stat-num"><span class="counter" data-target="12000" data-suffix="+">12,000+</span></div>
       <div class="stat-label">Applications optimized</div>
     </div>
     <div class="stat">
       <i class="ti ti-trending-up stat-icon" aria-hidden="true"></i>
-      <div class="stat-num"><span class="counter" data-target="3" data-suffix="x">0</span></div>
+      <div class="stat-num"><span class="counter" data-target="3" data-suffix="x">3x</span></div>
       <div class="stat-label">More interview callbacks</div>
     </div>
     <div class="stat">
       <i class="ti ti-clock stat-icon" aria-hidden="true"></i>
-      <div class="stat-num"><span class="counter" data-target="30" data-suffix="s">0</span></div>
+      <div class="stat-num"><span class="counter" data-target="30" data-suffix="s">30s</span></div>
       <div class="stat-label">Average analysis time</div>
     </div>
     <div class="stat">
       <i class="ti ti-star stat-icon" aria-hidden="true"></i>
-      <div class="stat-num"><span class="counter" data-target="98" data-suffix="%">0</span></div>
+      <div class="stat-num"><span class="counter" data-target="98" data-suffix="%">98%</span></div>
       <div class="stat-label">User satisfaction</div>
     </div>
   </div>
@@ -399,7 +384,7 @@ window.addEventListener("DOMContentLoaded", () => {
           </div>
           <div>
             <div class="field-label">Your resume <span>PDF, DOC, or TXT</span></div>
-            <div class="drop" id="drop" onclick="document.getElementById('fInput').click()" tabindex="0" role="button" aria-label="Upload resume">
+            <div class="drop" id="drop" onclick="document.getElementById(&#39;fInput&#39;).click()" tabindex="0" role="button" aria-label="Upload resume">
               <i class="ti ti-file-text drop-icon" aria-hidden="true"></i>
               <div class="drop-head">Click to upload</div>
               <div class="drop-sub">or drag and drop your file here</div>
@@ -417,7 +402,7 @@ window.addEventListener("DOMContentLoaded", () => {
       </div>
       <div class="card-foot">
         <div class="foot-note"><i class="ti ti-lock" aria-hidden="true"></i>Your data is never stored</div>
-        <button class="submit" id="go-btn" onclick="go()">
+        <button class="submit" id="go-btn" onclick="go()" style="position: relative; overflow: hidden;">
           Analyze now <i class="ti ti-sparkles" aria-hidden="true"></i>
         </button>
       </div>
@@ -425,7 +410,7 @@ window.addEventListener("DOMContentLoaded", () => {
   </div>
 </div>
 
-<div id="loading-view">
+<div id="loading-view" style="display: none;">
   <div class="loading-rings"><span></span><span></span><span></span></div>
   <div class="loading-title">Analyzing your application…</div>
   <div class="loading-sub">Claude AI is working its magic — about 30 seconds</div>
@@ -443,13 +428,13 @@ window.addEventListener("DOMContentLoaded", () => {
   </div>
 </div>
 
-<div id="results-view">
+<div id="results-view" style="display: none;">
   <div class="results-nav">
     <div class="results-logo">Apply<em>Fast</em></div>
     <div class="rtabs">
-      <button class="rtab active" onclick="rtab('resume',this)"><i class="ti ti-file-description" aria-hidden="true"></i>Resume</button>
-      <button class="rtab" onclick="rtab('cover',this)"><i class="ti ti-mail" aria-hidden="true"></i>Cover letter</button>
-      <button class="rtab" onclick="rtab('interview',this)"><i class="ti ti-messages" aria-hidden="true"></i>Interview prep</button>
+      <button class="rtab active" onclick="rtab(&#39;resume&#39;,this)"><i class="ti ti-file-description" aria-hidden="true"></i>Resume</button>
+      <button class="rtab" onclick="rtab(&#39;cover&#39;,this)"><i class="ti ti-mail" aria-hidden="true"></i>Cover letter</button>
+      <button class="rtab" onclick="rtab(&#39;interview&#39;,this)"><i class="ti ti-messages" aria-hidden="true"></i>Interview prep</button>
     </div>
     <button class="rtab-new" onclick="reset()"><i class="ti ti-refresh" style="font-size:13px" aria-hidden="true"></i>New application</button>
   </div>
@@ -478,7 +463,7 @@ window.addEventListener("DOMContentLoaded", () => {
       <div class="content-card">
         <div class="content-head">
           <div class="content-title">Tailored resume</div>
-          <button class="action-btn" onclick="copy('resume-body')"><i class="ti ti-copy" aria-hidden="true"></i>Copy</button>
+          <button class="action-btn" onclick="copy(&#39;resume-body&#39;)" style="position: relative; overflow: hidden;"><i class="ti ti-copy" aria-hidden="true"></i>Copy</button>
         </div>
         <div class="content-body"><div class="prose" id="resume-body"></div></div>
       </div>
@@ -487,7 +472,7 @@ window.addEventListener("DOMContentLoaded", () => {
       <div class="content-card">
         <div class="content-head">
           <div class="content-title">Cover letter</div>
-          <button class="action-btn" onclick="copy('cover-body')"><i class="ti ti-copy" aria-hidden="true"></i>Copy</button>
+          <button class="action-btn" onclick="copy(&#39;cover-body&#39;)" style="position: relative; overflow: hidden;"><i class="ti ti-copy" aria-hidden="true"></i>Copy</button>
         </div>
         <div class="content-body"><div class="prose" id="cover-body"></div></div>
       </div>
@@ -657,42 +642,16 @@ async function go(){
     },delays[i]);
   });
   try{
-    const res=await fetch('https://api.anthropic.com/v1/messages',{
+    const res=await fetch('https://applyfast-1.onrender.com/analyze',{
       method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':'PASTE_YOUR_KEY_HERE','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({
-        model:'claude-sonnet-4-6',
-        max_tokens:3000,
-        messages:[{role:'user',content:`You are an expert career coach. Given a job description and resume, respond ONLY with a valid JSON object — no markdown fences, no preamble.
-
-JOB DESCRIPTION:
-${jd}
-
-RESUME:
-${resumeText}
-
-JSON schema:
-{
-  "fit_score": integer 0-100,
-  "grade": "Excellent Match"|"Strong Match"|"Good Match"|"Partial Match"|"Weak Match",
-  "verdict": "one concise sentence about overall fit, max 18 words",
-  "skills_score": integer 0-100,
-  "experience_score": integer 0-100,
-  "keywords_score": integer 0-100,
-  "matched_keywords": ["up to 5 keywords from JD that appear in resume"],
-  "missing_keywords": ["up to 4 important keywords from JD missing from resume"],
-  "resume": "full rewritten resume as plain text, optimized for this role",
-  "cover_letter": "professional cover letter as plain text, 3-4 paragraphs",
-  "interview_questions": [
-    {"category":"Behavioral"|"Technical"|"Role-specific"|"Culture fit","question":"string"},
-    ... 8 total
-  ]
-}`}]}
-      })
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({jobDescription:jd,resumeText:resumeText})
     });
-    const data=await res.json();
-    const raw=data.content.map(b=>b.text||'').join('');
-    const d=JSON.parse(raw.replace(/```json|```/g,'').trim());
+    if(!res.ok){
+      const errData=await res.json().catch(()=>({}));
+      throw new Error(errData.error||('Server returned '+res.status));
+    }
+    const d=await res.json();
     document.getElementById('prog').style.width='100%';
     setTimeout(()=>{show('results-view');render(d);},300);
   }catch(e){
@@ -760,29 +719,7 @@ function reset(){
 }
 show('home-view');
 </script>
-<script>
-async function analyzeResume() {
-  const resumeText = document.getElementById("resume").value;
-  const jobDescription = document.getElementById("job").value;
 
-  const response = await fetch("http://localhost:5000/analyze", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      resumeText,
-      jobDescription
-    })
-  });
-
-  const data = await response.json();
-
-  document.getElementById("output").innerText =
-    JSON.stringify(data, null, 2);
-}
-</script>
 
 
 </body></html>
-
